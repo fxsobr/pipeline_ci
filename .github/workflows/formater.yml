@@ -24,7 +24,5 @@ jobs:
       - name: Install Mix Dependencies
         if: steps.mix-cache-format.outputs.cache-hit != 'true'
         run: mix deps.get
-      - name ==> FORMAT
+      - name: ==> FORMAT
         run: mix format --check-formatted
-
-
